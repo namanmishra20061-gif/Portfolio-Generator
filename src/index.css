@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    min-height: 100vh;
+    color: #f1f5f9;
+  }
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2); 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.4); 
+}
